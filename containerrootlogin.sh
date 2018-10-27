@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NAME=$1
-CONTAINERID=$2
-REPO=$3
+NAME=${12}
+CONTAINERID=$1
+REPO=$2
 TAG=test
 echo "trying to root container"
 docker exec --user root -it $NAME /bin/bash
