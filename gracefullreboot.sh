@@ -1,10 +1,10 @@
 #!/bin/bash
 
-NAME=$1
-CMND=$2
-CONTAINERID=$3
+NAME=${13}
+CMND=$1
+CONTAINERID=$2
 REPO=$3
 TAG=test
 
-echo "
-docker stop $NAME && sleep 37 && sudo $2
+echo "trying to stop container"
+docker stop $NAME && sleep 37 && sudo $1
